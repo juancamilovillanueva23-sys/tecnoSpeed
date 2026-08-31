@@ -18,10 +18,13 @@ return new class extends Migration
             $table->string('nombre_pro', 255);
             $table->text('descripcion');
             $table->decimal('valor_pro', 8, 2);
+            $table->integer('marca');
             $table->integer('id_imagen');
             $table->integer('id_categoria');
             $table->integer('id__stock');
             $table->integer('id_cupon');
+            
+
         });
         Schema::enableForeignKeyConstraints();
     }
