@@ -12,24 +12,30 @@
 <body>
     <header class="head">
         <div class="Busqueda">
-        <form action="/buscar" method="GET">
-         <label class="form-label" for="busqueda"></label>
-         <input class="busq"
-             type="search" 
-             id="busqueda" 
-             name="q" 
-             placeholder="Escribe tu búsqueda..." 
-             required
-            >
-  <button class="btn-b" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-</form>
-</div>
-<div class="logo">
-    <img src="{{ asset('storage/img/img_corp/img_prueba.jpg') }}" alt="Logo de la empresa">
-<div class="inicio_sesion">
-    <h1 class="Title_1"><i class="fa-solid fa-user"></i>iniciar sesion</h1>
-    <button class="btn-b" type="submit"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            <form action="/buscar" method="GET">
+                <label class="form-label" for="busqueda"></label>
+                <input class="busq"
+                type="search" 
+                id="busqueda" 
+                name="q" 
+                placeholder="Escribe tu búsqueda..." 
+                required>
+            </form>
+                <button class="btn-b" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="logo">
+            <img src="{{ asset('storage/img/img_corp/img_prueba.jpg') }}" alt="Logo de la empresa">
+                <div class="inicio_sesion">
+                    <h1 class="Title_1"><i class="fa-solid fa-user"></i>iniciar sesión</h1>
+                        <button class="btn-b" type="submit"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </header>
+    
+    <footer class=footer>
+        
+    
+    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
 
+    </footer>
     
     
 </body>

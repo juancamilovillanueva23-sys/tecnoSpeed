@@ -1,0 +1,123 @@
+/* Fondo general grisáceo */
+.login-page {
+    min-height: 100vh;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Tarjeta contenedora blanca redondeada */
+.login-card {
+    background-color: #ffffff;
+    border: 1.5px solid #2563eb;
+    border-radius: 20px;
+    padding: 40px 35px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título con la línea azul inferior */
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.login-header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000000;
+    margin: 0;
+}
+
+.linea-subtitulo {
+    width: 100px;
+    height: 4px;
+    background-color: #2563eb;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+/* Campos de texto y etiquetas */
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.grupo-campo label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.grupo-campo input {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Enlace de contraseña */
+.olvidaste-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.enlace-olvidaste {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Botón principal */
+.btn-iniciar {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.btn-iniciar:hover {
+    background-color: #1d4ed8;
+}
+
+/* Enlaces inferiores */
+.login-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.enlace-footer {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #000000;
+    text-decoration: none;
+}   

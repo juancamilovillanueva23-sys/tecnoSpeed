@@ -9,6 +9,8 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
+                'resources/css/forgot-password.css',
+                'resources/css/login.css',
                 'resources/css/app.css',
                 'resources/css/style_inicio.css',
                 'resources/js/app.js',
