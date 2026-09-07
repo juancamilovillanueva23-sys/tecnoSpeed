@@ -11,7 +11,7 @@
 </head>
 <header>  
 <!--container del header-->
-    <div class="container bg-white p-4 flex justify-between items-center">
+    <div class=" bg-white p-4 flex justify-between items-center">
     <!-- Formulario de búsqueda -->
         <div class="w-xl mt-1 px-4 ">
           <form action="#" method="GET" class="relative flex items-center">
@@ -48,7 +48,7 @@
 </header>
 <body class="bg-gray-400">
 <!-- Barra de navegación -->
-    <div class="container h-px40  p-2 bg-black flex-row">
+    <div class=" h-px40  p-2 bg-black flex-row">
         <nav>
             <ul class="flex flex-row  justify-around ">
                 <li class="text-black bg-slate-400 hover:bg-slate-300 rounded-full px-4"><a href="#">Auriculares<i class="fa-solid fa-headphones"></i></a></li>
@@ -59,22 +59,22 @@
         </nav>
     </div>
 <!--imagen-->
-<div class="container bg-white ">
+<div class=" bg-white ">
     <img class="w-full h-[500px] object-" src="{{ asset('storage/banner_2.jpg') }}" alt="Imagen de inicio">
 </div>
 <!--texto u eslogan-->
-<div class="container  bg-gradient-to-r from-blue-100 to-blue-400 p-4 rounded-lg shadow-md flex justify-center items-center">
+<div class="  bg-gradient-to-r from-blue-100 to-blue-400 p-4 rounded-lg shadow-md flex justify-center items-center">
     <h1 class="text-2xl font-bold uppercase text-gray-800">¡Bienvenido a TecnoSpeed! Tu mejor opción para adquirir tecnología confiable y de la mejor calidad.</h1>
 </div>
-<main class=" min-h-svg mt-4 grid">
+<main class=" min-h-svg mt-4 grid grid-cols-4 gap-6">
         <div class="container ">
             <h1 class="text-2xl font-bold uppercase text-gray-800 mx-4 w-[400px] px-8 ">Productos Destacados<i class="fa-solid fa-medal text-yellow-300 hover:text-yellow-200"></i></h1>
         </div>
-        <section class="w-full max-w-sm bg-white p-3 rounded-[32px] mx-16 mt-6 h-[520px] border-[6px] border-red-500">
+        <section class="w-full bg-white p-3 rounded-[32px] h-[520px] border-[6px] border-blue-700">
                 <article class="flwx flex-col justify-center items-center">
                     <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/airpods_3.jpg') }}" alt="Imagen de auriculares">
                     <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-4 py-2 mt-2 rounded-lg w-[180px]">Airpods Pro 3</h2>
-                    <p class="text-black font-bold mt-2">Cancelacion activa de ruido, audio espacial y modo abiente con 4 meses de garantia.</p>
+                    <p class="text-black font-bold mt-2">Cancelacion activa de ruido, audio espacial y modo ambiente con 4 meses de garantia.</p>
                 </article>
             <article class="flex items-center justify-between mt-8">
                 <div class="flex  flex-col">
@@ -85,11 +85,11 @@
             </article>
         </section>
 
-        <section class="w-full max-w-sm bg-white p-3 rounded-[32px] mx-16 mt-6 h-[520px] border-[6px] border-red-500">
+        <section class="w-full  bg-white p-3 rounded-[32px]  h-[520px] border-[6px] border-blue-700">
                 <article class="flwx flex-col justify-center items-center">
                     <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/airpods_3.jpg') }}" alt="Imagen de auriculares">
                     <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-4 py-2 mt-2 rounded-lg w-[180px]">Airpods Pro 3</h2>
-                    <p class="text-black font-bold mt-2">Cancelacion activa de ruido, audio espacial y modo abiente con 4 meses de garantia.</p>
+                    <p class="text-black font-bold mt-2">Cancelacion activa de ruido, audio espacial y modo ambiente con 4 meses de garantia.</p>
                 </article>
             <article class="flex items-center justify-between mt-8">
                 <div class="flex  flex-col">
@@ -100,11 +100,11 @@
             </article>
         </section>
 
-        <section class="w-full max-w-sm bg-white p-3 rounded-[32px] mx-16 mt-6 h-[520px] border-[6px] border-red-500">
+        <section class="w-full  bg-white p-3 rounded-[32px] h-[520px] border-[6px] border-blue-700">
                 <article class="flwx flex-col justify-center items-center">
-                    <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/airpods_3.jpg') }}" alt="Imagen de auriculares">
+                    <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/airpods_max.jpg') }}" alt="Imagen de auriculares">
                     <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-4 py-2 mt-2 rounded-lg w-[180px]">Airpods Pro 3</h2>
-                    <p class="text-black font-bold mt-2">Cancelacion activa de ruido, audio espacial y modo abiente con 4 meses de garantia.</p>
+                    <p class="text-black font-bold mt-2">Cancelacion activa de ruido, audio espacial y modo ambiente con 4 meses de garantia.</p>
                 </article>
             <article class="flex items-center justify-between mt-8">
                 <div class="flex  flex-col">
