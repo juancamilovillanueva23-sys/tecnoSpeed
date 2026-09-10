@@ -3,8 +3,7 @@
 use App\Http\Middleware\EnsureTeamMembership;
 use Illuminate\Support\Facades\Route;
 
-Route::view('audifonos', 'partials.audifono')->name('audifono');
-Route::view('audifonos/', 'audifono')->name('audifono');
+Route::view('/audifonos', 'audifono')->name('audifono');
 Route::view('/', 'inicio')->name('home');
 
 

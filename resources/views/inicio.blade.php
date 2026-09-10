@@ -51,13 +51,7 @@
     <div class=" h-[60px]  p-2 bg-black flex-row  ">
         <nav>
             <ul class="flex flex-row  justify-around ">
-
-                <li class="text-black bg-slate-400 hover:bg-slate-300 rounded-full px-4"><a href="{{route('audifono')}}">Auriculares<i class="fa-solid fa-headphones"></i></a></li>
-                <li class="text-black bg-slate-400 hover:bg-slate-300 rounded-full px-4"><a href="#">Forros protectores<i class="fa-solid fa-shield"></i></a></li>
-                <li class="text-black bg-slate-400 hover:bg-slate-300 rounded-full px-4"><a href="#">Cargadores<i class="fa-solid fa-charging-station"></i></a></li>
-                <li class="text-black bg-slate-400 hover:bg-slate-300 rounded-full px-4 "><a href="#">Celulares<i class="fa-solid fa-mobile-screen"></i></a></li>
-
-                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 h-[28px]"><a href="#">Auriculares<i class="fa-solid fa-headphones"></i></a></li>
+                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 h-[28px]"><a href="{{ route('audifono') }}">Auriculares<i class="fa-solid fa-headphones"></i></a></li>
                 <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="#">Accesorios<i class="fa-solid fa-shield"></i></a></li>
                 <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="#">Cargadores<i class="fa-solid fa-charging-station"></i></a></li>
                 <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 "><a href="#">Celulares<i class="fa-solid fa-mobile-screen"></i></a></li>
@@ -77,14 +71,13 @@
  <div class=" mt-6 justify-items-center w-full  ">
             <h1 class="text-2xl font-bold uppercase text-gray-800 mx-4  px-8 bg-blue-600 text-white rounded-3xl">Productos Destacados<i class="fa-solid fa-medal text-yellow-300 hover:text-yellow-200"></i></h1>
         </div>  
-<main class=" min-h-svg mt-12 grid grid-cols-4 gap-12">
-        <section class="w-full bg-white p-3 rounded-[32px] h-[520px] border-[6px] border-blue-700">
+<main class=" min-h-svg mt-12 grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+        <section class=" w-[400px] mx-44 bg-white  p-3 rounded-[32px] md:h-[520px] md:w-full md:mx-0 border-[6px] border-blue-700">
                 <article class="flwx flex-col justify-center items-center">
                     <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/img_proyecto/airpods3.jpg') }}" alt="Imagen de auriculares">
                     <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-4 py-2 mt-2 rounded-lg w-[180px]">Airpods Pro 3</h2>
-                    <p class="text-black font-bold mt-2">Los AirPods Pro 3 ofrecen cancelación de ruido, audio espacial y modo ambiente. Incluyen 4 meses de garantía.</p>
                 </article>
-            <article class="flex items-center justify-between mt-8">
+            <article class="flex items-center justify-between mt-20">
                 <div class="flex  flex-col">
                     <h4 class="  text-gray-800 text-xs font-medium line-through">$104.900</h4>
                     <h3 class="  text-gray-800 text-2xl font-black">$89.000</h3>
@@ -93,13 +86,12 @@
             </article>
         </section>
 
-        <section class="w-full  bg-white p-3 rounded-[32px]  h-[520px] border-[6px] border-blue-700">
+        <section class="w-[400px] mx-44 bg-white  p-3 rounded-[32px] md:h-[520px] md:w-full md:mx-0 border-[6px] border-blue-700">
                 <article class="flwx flex-col justify-center items-center">
                     <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/img_proyecto/airpods2.jpg') }}" alt="Imagen de auriculares">
                     <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-4 py-2 mt-2 rounded-lg w-[180px]">Airpods Pro 2 </h2>
-                    <p class="text-black font-bold mt-2">Los airpods pro 2 te ofrecen,una cancelación activa de ruido, audio espacial y modo ambiente. Incluye 4 meses de garantía..</p>
                 </article>
-            <article class="flex items-center justify-between mt-2">
+            <article class="flex items-center justify-between mt-20">
                 <div class="flex  flex-col">
                     <h4 class="  text-gray-800 text-xs font-medium line-through">$99.000</h4>
                     <h3 class="  text-gray-800 text-2xl font-black">$79.000</h3>
@@ -108,13 +100,12 @@
             </article>
         </section>
 
-        <section class="w-full  bg-white p-3 rounded-[32px] h-[520px] border-[6px] border-blue-700">
+        <section class="w-[400px] mx-44 bg-white  p-3 rounded-[32px] md:h-[520px] md:w-full md:mx-0 border-[6px] border-blue-700">
                 <article class="flwx flex-col justify-center items-center">
                     <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/img_proyecto/airpods_max.jpg') }}" alt="Imagen de auriculares">
                     <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-4 py-2 mt-2 rounded-lg w-[180px]">Airpods Max</h2>
-                    <p class="text-black font-bold mt-2">Los Airpods Max te ofrecen: un diseño formal, comodidad sin igual, audio espacial y cancelación de ruido. Con 4 meses de garantía.</p>
                 </article>
-            <article class="flex items-center justify-between mt-2">
+            <article class="flex items-center justify-between mt-20">
                 <div class="flex  flex-col">
                     <h4 class="  text-gray-800 text-xs font-medium line-through">$149.900</h4>
                     <h3 class="  text-gray-800 text-2xl font-black">$129.900</h3>
@@ -122,13 +113,12 @@
                     <a class="  bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 ">Comprar</a>
             </article>
         </section>
-        <section class="w-full  bg-white p-3 rounded-[32px] h-[520px] border-[6px] border-blue-700">
+        <section class="w-[400px] mx-44 bg-white  p-3 rounded-[32px] md:h-[520px] md:w-full md:mx-0 border-[6px] border-blue-700">
                 <article class="flwx flex-col justify-center items-center">
                     <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/img_proyecto/iphone17promax.jpg') }}" alt="Imagen de auriculares">
                     <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-6  mt-2 rounded-lg w-[240px]">Iphone 17 pro max</h2>
-                    <p class="text-black font-bold mt-2">iPhone 17 Pro Max: Potencia extrema, diseño revolucionario en titanio y un sistema de cámaras profesional de nivel superior. Con 4 meses de garantía.</p>
                 </article>
-            <article class="flex items-center justify-between mt-6">
+            <article class="flex items-center justify-between mt-24">
                 <div class="flex  flex-col">
                     <h4 class="  text-gray-800 text-xs font-medium line-through">$7.999.900</h4>
                     <h3 class="  text-gray-800 text-2xl font-black">$4.100.000</h3>
@@ -136,9 +126,36 @@
                     <a class="  bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 ">Comprar</a>
             </article>
         </section>
-        <section class="bg-black">
-
+          <section class="w-[400px] mx-44 bg-white  p-3 rounded-[32px] md:h-[520px] md:w-full md:mx-0 border-[6px] border-blue-700">
+                <article class="flwx flex-col justify-center items-center">
+                    <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/img_proyecto/car_ip.jpg') }}" alt="Imagen de auriculares">
+                    <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-6  mt-2 rounded-lg w-[240px]">Iphone 17 pro max</h2>
+                </article>
+            <article class="flex items-center justify-between mt-24">
+                <div class="flex  flex-col">
+                    <h4 class="  text-gray-800 text-xs font-medium line-through">$7.999.900</h4>
+                    <h3 class="  text-gray-800 text-2xl font-black">$4.100.000</h3>
+                </div>
+                    <a class="  bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 ">Comprar</a>
+            </article>
         </section>
+          <section class="w-[400px] mx-44 bg-white  p-3 rounded-[32px] md:h-[520px] md:w-full md:mx-0 border-[6px] border-blue-700">
+                <article class="flwx flex-col justify-center items-center">
+                    <img class=" w-full h-[300px] rounded-3xl hover:scale-95 " src="{{ asset('storage/img_proyecto/iphone17promax.jpg') }}" alt="Imagen de auriculares">
+                    <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-6  mt-2 rounded-lg w-[240px]">Iphone 17 pro max</h2>
+                </article>
+            <article class="flex items-center justify-between mt-24">
+                <div class="flex  flex-col">
+                    <h4 class="  text-gray-800 text-xs font-medium line-through">$7.999.900</h4>
+                    <h3 class="  text-gray-800 text-2xl font-black">$4.100.000</h3>
+                </div>
+                    <a class="  bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 ">Comprar</a>
+            </article>
+        </section>
+</main>
+    <div class="">
+    <h1 class="text-white text-4xl font-bold">Texto sobre el fondo</h1>
+     </div>
     
 
   
