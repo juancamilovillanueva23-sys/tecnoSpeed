@@ -4,6 +4,7 @@ use App\Http\Middleware\EnsureTeamMembership;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/audifonos', 'audifono')->name('audifono');
+Route::view('/celulares', 'celular')->name('celular');
 Route::view('/', 'inicio')->name('home');
 
 
