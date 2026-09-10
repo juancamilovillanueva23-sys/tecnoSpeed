@@ -85,13 +85,13 @@
     <main class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
             <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods3.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 3</h2>
+                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/cargaiphone.jpg') }}" alt="Imagen de cargadores">
+                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Cargador Iphone</h2>
             </article>
             <article class="flex items-center justify-between mt-8">
                 <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$104.900</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$89.000</h3>
+                    <h4 class="text-gray-800 text-xs font-medium line-through">$85.900</h4>
+                    <h3 class="text-gray-800 text-2xl font-black">$59.900</h3>
                 </div>
                 <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
             </article>
@@ -100,7 +100,7 @@
         <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
             <article class="flex flex-col justify-center items-center">
                 <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
+                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Cargador Samsung</h2>
             </article>
             <article class="flex items-center justify-between mt-8">
                 <div class="flex flex-col">

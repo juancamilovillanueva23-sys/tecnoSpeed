@@ -53,7 +53,7 @@
             <ul class="flex flex-row  justify-around ">
                 <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 h-[28px]"><a href="{{ route('audifono') }}">Auriculares<i class="fa-solid fa-headphones"></i></a></li>
                 <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="#">Accesorios<i class="fa-solid fa-shield"></i></a></li>
-                <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="#">Cargadores<i class="fa-solid fa-charging-station"></i></a></li>
+                <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="{{ route('cargador') }}">Cargadores<i class="fa-solid fa-charging-station"></i></a></li>
                 <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 "><a href="#">Celulares<i class="fa-solid fa-mobile-screen"></i></a></li>
                 <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 "><a href="#">Parlantes<i class="fa-solid fa-mobile-screen"></i></a></li>
 
