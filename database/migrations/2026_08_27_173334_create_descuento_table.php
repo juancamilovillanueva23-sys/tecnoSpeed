@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('descuento', function (Blueprint $table) {
             $table->integer('Id_descuento')->primary();
             $table->string('Cantidad descuento', 255);
-            $table->foreign('Cantidad descuento')->references('id_producto')->on('Producto');
             $table->string('duracion', 255);
             $table->string('estado', 255);
             $table->integer('id_producto');

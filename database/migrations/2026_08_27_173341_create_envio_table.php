@@ -15,13 +15,11 @@ return new class extends Migration
 
         Schema::create('envio', function (Blueprint $table) {
             $table->integer('id_envio')->primary();
-            $table->foreign('id_envio')->references('id_envio')->on('Pedidos');
             $table->timestamp('fecha_envio');
             $table->timestamp('fecha_llegada');
             $table->float('valor_envio');
             $table->integer('id_transportadora');
             $table->integer('id_costo_envio');
-            $table->foreign('id_costo_envio')->references('id_costo_env')->on('costo_envio');
         });
 
         Schema::enableForeignKeyConstraints();

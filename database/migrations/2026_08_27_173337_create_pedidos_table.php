@@ -22,7 +22,6 @@ return new class extends Migration
             $table->float('total');
             $table->integer('id_envio');
             $table->integer('id_users');
-            $table->foreign('id_users')->references('num_doc')->on('users');
         });
 
         Schema::enableForeignKeyConstraints();

@@ -21,7 +21,6 @@ return new class extends Migration
             $table->integer('num_doc');
             $table->integer('id_producto');
             $table->integer('id_factura');
-            $table->foreign('id_factura')->references('id_factura')->on('factura');
         });
 
         Schema::enableForeignKeyConstraints();

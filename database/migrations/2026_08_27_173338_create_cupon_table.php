@@ -15,7 +15,6 @@ return new class extends Migration
 
         Schema::create('cupon', function (Blueprint $table) {
             $table->integer('id_cupon')->primary();
-            $table->foreign('id_cupon')->references('num_doc')->on('users');
             $table->string('codigo');
             $table->float('valor_cupon');
             $table->timestamp('fecha_inicio')->nullable();

@@ -18,9 +18,7 @@ return new class extends Migration
             $table->string('tipo_pago');
             $table->string('token_pasarela');
             $table->integer('id_users');
-            $table->foreign('id_users')->references('num_doc')->on('users');
             $table->integer('id_pago');
-            $table->foreign('id_pago')->references('id_pago')->on('pago');
         });
 
         Schema::enableForeignKeyConstraints();
