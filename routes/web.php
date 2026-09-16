@@ -4,7 +4,7 @@ use App\Http\Middleware\EnsureTeamMembership;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 
-Route::get('/celulares', [ProductoController::class, 'index'])->name('celulares.index');
+Route::get('/celulares', [ProductoController::class, 'index'])->name('celulares');
 Route::view('/cargadores', 'cargador')->name('cargador');
 Route::view('/audifonos', 'audifono')->name('audifono');
 Route::view('/', 'inicio')->name('home');

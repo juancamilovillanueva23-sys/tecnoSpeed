@@ -20,7 +20,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Pantalla AMOLED 6.8", 256GB de almacenamiento, cámara triple de 108MP.',
                 'valor_pro' => 899.99,
                 'marca' => 101, // Samsung/Marca A
-                'id_imagen' => 'storage/img/5.png',
+                'id_imagen' => 'storage/img/1.jpg',
                 'id_categoria' => 1, // Celulares
                 'id__stock' => 1,
                 'id_cupon' => 1,
