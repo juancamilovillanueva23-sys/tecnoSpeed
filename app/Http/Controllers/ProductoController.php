@@ -7,20 +7,25 @@ use Illuminate\Http\Request;
 
 class ProductoController extends Controller
 {
-    public function index(Request $request)
-    {
-        $query = Producto::query();
+    // ------------ consultas audifonos -------------------
+public function audifonos_productos(Request $request)
+{
+    $query = Producto::query()->where('id_producto', 'like', '10%');
+    $productos = $query->paginate(10);
 
-        if ($request->filled('query')) {
-            $query->where('nombre_pro', 'like', '%' . $request->query('query') . '%');
-        }
+    return view('audifono', compact('productos'));
+} 
+    // ------------ consultas audifonos -------------------
+    
+    // ------------ consultas celulares -------------------
+    public function celular_productos(Request $request)
+  {
+    
+    $query = Producto::query()->where('id_producto', 'like', '20%');
 
-        // Obtener los productos de la base de datos
-        $productos = $query->paginate(12);
+    $productos = $query->paginate(10);
 
-        // Retornar la vista 'celular' (o 'inicio', según el nombre exacto de tu archivo blade)
-        return view('celular', compact('productos'));
-        return view('cargador',compact('productos'));
-        return view('accesorio',compact('productos'));
-    }
+    return view('audifono', compact('productos'));
+} 
+  // ------------ consultas celulares -------------------
 }

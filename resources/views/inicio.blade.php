@@ -1,4 +1,4 @@
-<x-layouts::app.barra_nav :title="__('celulares')">
+<x-layouts::app.barra_nav :title="__('inicio')">
 </x-layouts::app.barra_nav>
 <!--imagen-->
 <div class="bg-gradient-to-r from-blue-100 to-blue-400">

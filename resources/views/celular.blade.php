@@ -1,4 +1,4 @@
-<x-layouts::app.barra_nav :title="__('celulares')">
+<x-layouts::app.barra_nav :title="__('accesorio')">
 </x-layouts::app.barra_nav>
 <body>
     <div class="flex flex-col md:flex-row gap-8 mt-4 p-4">
@@ -37,17 +37,22 @@
                     alt="{{ $producto->nombre_pro }}"
                     onerror="this.onerror=null; this.src='{{ asset('storage/img/1.jpg') }}';">
 
-                    <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10 truncate" title="{{ $producto->nombre_pro }}">
+                    <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-6 rounded-lg w-[180px] text-center h-10 truncate" title="{{ $producto->nombre_pro }}">
                         {{ $producto->nombre_pro }}
                     </h2>
+                    
                 </article>
 
-                <article class="flex items-center justify-between mt-8 px-2">
+                <article class="flex items-center justify-between mt-2 px-2">
                     <div class="flex flex-col">
-                        <h3 class="text-gray-800 text-2xl font-black">
+                        <h3 class="text-gray-800 mt-4 text-2xl font-black">
                             ${{ number_format($producto->valor_pro, 0, ',', '.') }}
                         </h3>
+                   
                     </div>
+                        <button type="submit" class="bg-blue-700 w-[100px] py-2 mt-4 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">
+                        Ver más
+                        </button>
                 </article>
             </section>
 
@@ -57,15 +62,16 @@
                     <p class="text-gray-400 text-sm mt-1">Intenta agregar nuevos productos a la base de datos.</p>
                 </div>
         @endforelse
+         
 
-</main>
-
-        <!-- Paginación -->
-        @if($productos->hasPages())
-            <div class="mt-6">
+       @if($productos->hasPages())
+            <div class="col-span-full flex justify-center items-center mt-12 mb-8 w-full md:-ml-32 [&_p]:hidden [&_nav_a]:bg-blue-500 [&_nav_a]:text-white [&_nav_a]:border-blue-600 [&_nav_span]:bg-blue-800 [&_nav_span]:text-white [&_nav_span]:border-blue-500">
                 {{ $productos->links() }}
             </div>
         @endif
+       
+    </main>
+
  
     
 </body>

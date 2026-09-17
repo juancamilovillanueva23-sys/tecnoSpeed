@@ -1,6 +1,7 @@
-<x-layouts::app.barra_nav :title="__('audifonos')">
+<x-layouts::app.barra_nav :title="__('accesorio')">
 </x-layouts::app.barra_nav>
-<div class="flex flex-col md:flex-row gap-8 mt-4 p-4">
+<body>
+    <div class="flex flex-col md:flex-row gap-8 mt-4 p-4">
     <div >
         <aside class="w-full md:w-64 bg-white p-5 rounded-[32px] border-[4px] border-blue-700 h-800">
             <h2 class= " bg-blue-700 text-white  text-center p-[4px] w-20 ml-14 mt-4 rounded-full" >Filtros</h2>
@@ -22,257 +23,56 @@
         </aside>
     </div>    
 
-    
-    <main class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods3.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 3</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$104.900</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$89.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-        
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/1HORA.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">1 HORA</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
+    <main class="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/sony.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Sony</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$60.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$50.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/Redmi.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400  mt-2 rounded-lg w-[180px] text-center h-14">XIAOMI Redmi Buds 6 </h2>
-            </article>
-            <article class="flex items-center justify-between mt-4">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$85.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$80.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-        
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/lenovo.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Lenovo GK</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$70.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$68.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/jbl.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">JBL</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$65.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$55.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/samsung.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 mt-2 rounded-lg w-[180px] text-center h-14">Samsung Galaxy Buds 3</h2>
-            </article>
-            <article class="flex items-center justify-between mt-4">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$84.900</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$72.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/JBL22.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10"> JBL</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$77.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$70.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
+        @forelse ($productos as $producto)
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
+            <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
+                <article class="flex flex-col justify-center items-center">
+                    <!-- Imagen mapeada según id_producto o id_imagen -->
+                 <img class="w-full h-[190px] object-cover rounded-3xl hover:scale-95 transition-transform"
+                    src="{{ asset($producto->id_imagen ?? 'storage/img/1.jpg') }}"
+                    alt="{{ $producto->nombre_pro }}"
+                    onerror="this.onerror=null; this.src='{{ asset('storage/img/1.jpg') }}';">
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
+                    <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-6 rounded-lg w-[180px] text-center h-10 truncate" title="{{ $producto->nombre_pro }}">
+                        {{ $producto->nombre_pro }}
+                    </h2>
+                    
+                </article>
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
+                <article class="flex items-center justify-between mt-2 px-2">
+                    <div class="flex flex-col">
+                        <h3 class="text-gray-800 mt-4 text-2xl font-black">
+                            ${{ number_format($producto->valor_pro, 0, ',', '.') }}
+                        </h3>
+                   
+                    </div>
+                        <button type="submit" class="bg-blue-700 w-[100px] py-2 mt-4 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">
+                        Ver más
+                        </button>
+                </article>
+            </section>
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
+            @empty
+                <div class="col-span-full text-center py-12 bg-white rounded-3xl border-2 border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-600">No hay productos registrados</h3>
+                    <p class="text-gray-400 text-sm mt-1">Intenta agregar nuevos productos a la base de datos.</p>
                 </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
+        @endforelse
+         
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods4.png') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 4</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$90.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$75.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
+       @if($productos->hasPages())
+            <div class="col-span-full flex justify-center items-center mt-12 mb-8 w-full md:-ml-32 [&_p]:hidden [&_nav_a]:bg-blue-500 [&_nav_a]:text-white [&_nav_a]:border-blue-600 [&_nav_span]:bg-blue-800 [&_nav_span]:text-white [&_nav_span]:border-blue-500">
+                {{ $productos->links() }}
+            </div>
+        @endif
+       
     </main>
-  
-</div>
+
+ 
+    
 </body>
 </html>

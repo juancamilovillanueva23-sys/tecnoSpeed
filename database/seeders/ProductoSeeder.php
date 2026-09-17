@@ -13,242 +13,228 @@ class ProductoSeeder extends Seeder
     public function run(): void
     {
         $productos = [
-            // Smartphones (Categoría 1)
-            [
-                'id_producto' => 1,
-                'nombre_pro' => 'Smartphone Galaxy Ultra X',
-                'descripcion' => 'Pantalla AMOLED 6.8", 256GB de almacenamiento, cámara triple de 108MP.',
-                'valor_pro' => 899.99,
-                'marca' => 101, // Samsung/Marca A
-                'id_imagen' => 'storage/img/1.jpg',
-                'id_categoria' => 1, // Celulares
-                'id__stock' => 1,
-                'id_cupon' => 1,
-            ],  
-            [
-                'id_producto' => 2,
-                'nombre_pro' => 'iPhone Pro Max 15',
-                'descripcion' => 'Chip A17 Pro, acabado en titanio, pantalla Super Retina XDR.',
-                'valor_pro' => 1199.00,
-                'marca' => 102, // Apple/Marca B
-                'id_imagen' => 'storage/img/13.png',
-                'id_categoria' => 1,
-                'id__stock' => 2,
-                'id_cupon' => 0,
-            ],
-            [
-                'id_producto' => 3,
-                'nombre_pro' => 'Smartphone Redmi Note 13',
-                'descripcion' => 'Pantalla de 120Hz, carga rápida de 67W, excelente relación calidad-precio.',
-                'valor_pro' => 249.50,
-                'marca' => 103, // Xiaomi/Marca C
-                'id_imagen' => 'storage/img/airpods3.png',
-                'id_categoria' => 1,
-                'id__stock' => 3,
-                'id_cupon' => 2,
-            ],
+    [
+        'id_producto' => 1001,
+        'nombre_pro' => 'AirPods Pro 2',
+        'descripcion' => 'Auriculares inalámbricos con cancelación activa de ruido premium y audio adaptativo.',
+        'valor_pro' => 249.00,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2, // Audífonos
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1002,
+        'nombre_pro' => 'AirPods Pro 3',
+        'descripcion' => 'Siguiente generación con sonido de alta fidelidad y mejoras en el estuche de carga inteligente.',
+        'valor_pro' => 279.00,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1003,
+        'nombre_pro' => 'AirPods Pro 4',
+        'descripcion' => 'Diseño ergonómico avanzado, mayor duración de batería y audio espacial personalizado.',
+        'valor_pro' => 299.00,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1004,
+        'nombre_pro' => 'AirPods Pro Max',
+        'descripcion' => 'Auriculares de diadema premium con transductor dinámico diseñado por Apple y modo ambiente.',
+        'valor_pro' => 549.00,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1005,
+        'nombre_pro' => 'EarPods con conector USB-C',
+        'descripcion' => 'Auriculares de cable clásicos con micrófono integrado y conector USB tipo C nativo.',
+        'valor_pro' => 19.00,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1006,
+        'nombre_pro' => 'EarPods con conector Lightning',
+        'descripcion' => 'Auriculares cableados tradicionales con mando a distancia para control de volumen.',
+        'valor_pro' => 19.00,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1007,
+        'nombre_pro' => 'Sony Noise On-Ear',
+        'descripcion' => 'Auriculares supraaurales con cancelación de ruido inteligente y diseño plegable.',
+        'valor_pro' => 149.99,
+        'marca' => 103, // Sony
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1008,
+        'nombre_pro' => 'Samsung Galaxy Buds 3',
+        'descripcion' => 'Diseño renovado de ajuste abierto con cancelación de ruido y sonido nítido de 24 bits.',
+        'valor_pro' => 179.99,
+        'marca' => 101, // Samsung
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1009,
+        'nombre_pro' => 'Galaxy Buds Core',
+        'descripcion' => 'Edición esencial con graves potentes, batería de larga duración y resistencia al agua.',
+        'valor_pro' => 99.99,
+        'marca' => 101, // Samsung
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 1010,
+        'nombre_pro' => 'JBL Wave Buds',
+        'descripcion' => 'Auriculares in-ear ergonómicos resistentes al polvo y salpicaduras con sonido Deep Bass.',
+        'valor_pro' => 59.95,
+        'marca' => 104, // JBL
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2001,
+        'nombre_pro' => 'iPhone 15 Pro Max',
+        'descripcion' => 'Pantalla Super Retina XDR de 6.7", chip A17 Pro, almacenamiento de 256GB y cuerpo de titanio.',
+        'valor_pro' => 1199.99,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1, // Celulares
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2002,
+        'nombre_pro' => 'iPhone 15 Pro',
+        'descripcion' => 'Pantalla de 6.1", sistema de cámaras Pro con teleobjetivo y puerto USB-C de alta velocidad.',
+        'valor_pro' => 999.99,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2003,
+        'nombre_pro' => 'iPhone 15',
+        'descripcion' => 'Pantalla de 6.1" con Dynamic Island, cámara principal de 48 MP y diseño de vidrio tintado.',
+        'valor_pro' => 799.99,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2004,
+        'nombre_pro' => 'iPhone 14 Plus',
+        'descripcion' => 'Pantalla grande de 6.7", batería de ultra larga duración y sistema de detección de choques.',
+        'valor_pro' => 699.99,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2005,
+        'nombre_pro' => 'iPhone SE 2022',
+        'descripcion' => 'Diseño compacto con chip A15 Bionic, conectividad 5G y botón de inicio clásico con Touch ID.',
+        'valor_pro' => 429.99,
+        'marca' => 102, // Apple
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2006,
+        'nombre_pro' => 'Samsung Galaxy S24 Ultra',
+        'descripcion' => 'Pantalla QHD+ de 6.8", procesador Snapdragon 8 Gen 3, cámara de 200MP y S-Pen integrado con Galaxy AI.',
+        'valor_pro' => 1299.99,
+        'marca' => 101, // Samsung
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2007,
+        'nombre_pro' => 'Samsung Galaxy S24 Plus',
+        'descripcion' => 'Pantalla Dynamic AMOLED 2X de 6.7", batería de 4900 mAh y herramientas avanzadas de inteligencia artificial.',
+        'valor_pro' => 999.99,
+        'marca' => 101, // Samsung
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2008,
+        'nombre_pro' => 'Samsung Galaxy Z Fold 5',
+        'descripcion' => 'Smartphone plegable premium, pantalla principal de 7.6" al abrirse, ideal para multitarea.',
+        'valor_pro' => 1799.99,
+        'marca' => 101, // Samsung
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2009,
+        'nombre_pro' => 'Samsung Galaxy Z Flip 5',
+        'descripcion' => 'Diseño plegable compacto tipo concha con pantalla exterior Flex Window mejorada de 3.4".',
+        'valor_pro' => 999.99,
+        'marca' => 101, // Samsung
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 2010,
+        'nombre_pro' => 'Samsung Galaxy A55 5G',
+        'descripcion' => 'Pantalla Super AMOLED de 6.6", cámara triple de 50MP con Nightography y resistencia IP67 contra agua.',
+        'valor_pro' => 449.99,
+        'marca' => 101, // Samsung
+        'id_imagen' => 'storage/img/1.jpg',
+        'id_categoria' => 1,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ]
+];
 
-            // Laptops y Computación (Categoría 2)
-            [
-                'id_producto' => 4,
-                'nombre_pro' => 'MacBook Air M2',
-                'descripcion' => 'Diseño ultrafino, 8GB RAM, 256GB SSD, batería de hasta 18 horas.',
-                'valor_pro' => 1099.99,
-                'marca' => 102,
-                'id_imagen' => 'storage/img/airpods4.png',
-                'id_categoria' => 2, // Laptops
-                'id__stock' => 4,
-                'id_cupon' => 1,
-            ],
-            [
-                'id_producto' => 5,
-                'nombre_pro' => 'Laptop Gamer Legion 5',
-                'descripcion' => 'Procesador Ryzen 7, RTX 4060, 16GB RAM, pantalla 165Hz.',
-                'valor_pro' => 1250.00,
-                'marca' => 104, // Lenovo/Marca D
-                'id_imagen' => 'storage/img/Aukey.png',
-                'id_categoria' => 2,
-                'id__stock' => 5,
-                'id_cupon' => 0,
-            ],
-            [
-                'id_producto' => 6,
-                'nombre_pro' => 'Laptop ASUS ZenBook 14',
-                'descripcion' => 'Pantalla OLED 2.8K, Intel Core i7, 16GB RAM, 512GB SSD.',
-                'valor_pro' => 950.00,
-                'marca' => 105, // ASUS/Marca E
-                'id_imagen' => 'storage/img/cargaanker.png',
-                'id_categoria' => 2,
-                'id__stock' => 6,
-                'id_cupon' => 3,
-            ],
-
-            // Audio y Auriculares (Categoría 3)
-            [
-                'id_producto' => 7,
-                'nombre_pro' => 'Auriculares Inalámbricos WH-1000XM5',
-                'descripcion' => 'Cancelación de ruido líder en la industria, sonido de alta resolución.',
-                'valor_pro' => 380.00,
-                'marca' => 106, // Sony/Marca F
-                'id_imagen' => 'storage/img/cargaUgreen.png',
-                'id_categoria' => 3, // Audio
-                'id__stock' => 7,
-                'id_cupon' => 1,
-            ],
-            [
-                'id_producto' => 8,
-                'nombre_pro' => 'AirPods Pro 2da Gen',
-                'descripcion' => 'Cancelación activa de ruido, audio espacial personalizado, estuche USB-C.',
-                'valor_pro' => 249.00,
-                'marca' => 102,
-                'id_imagen' => 'storage/img/cargbelkin.png',
-                'id_categoria' => 3,
-                'id__stock' => 8,
-                'id_cupon' => 0,
-            ],
-            [
-                'id_producto' => 9,
-                'nombre_pro' => 'Altavoz Portátil JBL Charge 5',
-                'descripcion' => 'Resistente al agua IP67, 20 horas de reproducción, sonido potente.',
-                'valor_pro' => 179.99,
-                'marca' => 107, // JBL/Marca G
-                'id_imagen' => 'storage/img/chargeworx.png',
-                'id_categoria' => 3,
-                'id__stock' => 9,
-                'id_cupon' => 2,
-            ],
-
-            // Periféricos y Accesorios (Categoría 4)
-            [
-                'id_producto' => 10,
-                'nombre_pro' => 'Mouse Gamer MX Master 3S',
-                'descripcion' => 'Sensor de 8000 DPI, clics silenciosos, desplazamiento MagSpeed.',
-                'valor_pro' => 99.99,
-                'marca' => 108, // Logitech/Marca H
-                'id_imagen' => 'storage/img/iniu.png',
-                'id_categoria' => 4, // Periféricos
-                'id__stock' => 10,
-                'id_cupon' => 0,
-            ],
-            [
-                'id_producto' => 11,
-                'nombre_pro' => 'Teclado Mecánico RGB Pro',
-                'descripcion' => 'Switches mecánicos táctiles, retroiluminación RGB por tecla, chasis de aluminio.',
-                'valor_pro' => 129.50,
-                'marca' => 108,
-                'id_imagen' => 'storage/img/logots.png',
-                'id_categoria' => 4,
-                'id__stock' => 11,
-                'id_cupon' => 1,
-            ],
-            [
-                'id_producto' => 12,
-                'nombre_pro' => 'Cargador Rápido GaN 65W USB-C',
-                'descripcion' => 'Carga rápida multidispositivo de 3 puertos, tamaño compacto.',
-                'valor_pro' => 35.00,
-                'marca' => 103,
-                'id_imagen' => 'storage/img/maxell.png',
-                'id_categoria' => 4,
-                'id__stock' => 12,
-                'id_cupon' => 0,
-            ],
-
-            // Smartwatches y Wearables (Categoría 5)
-            [
-                'id_producto' => 13,
-                'nombre_pro' => 'Smartwatch Galaxy Watch 6',
-                'descripcion' => 'Monitoreo de salud avanzado, GPS integrado, pantalla Always On.',
-                'valor_pro' => 299.99,
-                'marca' => 101,
-                'id_imagen' => 'storage/img/RAW.png',
-                'id_categoria' => 5, // Wearables
-                'id__stock' => 13,
-                'id_cupon' => 2,
-            ],
-            [
-                'id_producto' => 14,
-                'nombre_pro' => 'Apple Watch Series 9',
-                'descripcion' => 'Gesto de doble toque, pantalla de 2000 nits, seguimiento de entrenamiento.',
-                'valor_pro' => 399.00,
-                'marca' => 102,
-                'id_imagen' => 'storage/img/spinge.png',
-                'id_categoria' => 5,
-                'id__stock' => 14,
-                'id_cupon' => 0,
-            ],
-
-            // Monitores y Televisores (Categoría 6)
-            [
-                'id_producto' => 15,
-                'nombre_pro' => 'Monitor Gamer 27" 144Hz',
-                'descripcion' => 'Panel IPS Full HD, 1ms de respuesta, compatible con FreeSync.',
-                'valor_pro' => 219.99,
-                'marca' => 101,
-                'id_imagen' => 'storage/img/voomy.png',
-                'id_categoria' => 6, // Monitores
-                'id__stock' => 15,
-                'id_cupon' => 1,
-            ],
-            [
-                'id_producto' => 16,
-                'nombre_pro' => 'Smart TV 55" 4K OLED',
-                'descripcion' => 'Resolución 4K UHD, HDR10+, procesador con IA, Dolby Atmos.',
-                'valor_pro' => 850.00,
-                'marca' => 106,
-                'id_imagen' => 'storage/img/5.png',
-                'id_categoria' => 6,
-                'id__stock' => 16,
-                'id_cupon' => 3,
-            ],
-
-            // Consolas y Gaming (Categoría 7)
-            [
-                'id_producto' => 17,
-                'nombre_pro' => 'Consola PlayStation 5 Edición Digital',
-                'descripcion' => 'SSD ultrarrápido de 825GB, audio 3D, gatillos adaptativos.',
-                'valor_pro' => 449.99,
-                'marca' => 106,
-                'id_imagen' => 'storage/img/airpods3.png',
-                'id_categoria' => 7, // Consolas
-                'id__stock' => 17,
-                'id_cupon' => 0,
-            ],
-            [
-                'id_producto' => 18,
-                'nombre_pro' => 'Mando Inalámbrico DualSense',
-                'descripcion' => 'Retroalimentación háptica, micrófono integrado, botón crear.',
-                'valor_pro' => 69.99,
-                'marca' => 106,
-                'id_imagen' => 'storage/img/cargaanker.png',
-                'id_categoria' => 7,
-                'id__stock' => 18,
-                'id_cupon' => 1,
-            ],
-
-            // Almacenamiento (Categoría 8)
-            [
-                'id_producto' => 19,
-                'nombre_pro' => 'Disco Duro Externo 2TB USB 3.0',
-                'descripcion' => 'Almacenamiento portátil, compatibilidad plug-and-play.',
-                'valor_pro' => 65.00,
-                'marca' => 106,
-                'id_imagen' => 'storage/img/logots.png',
-                'id_categoria' => 8, // Almacenamiento
-                'id__stock' => 19,
-                'id_cupon' => 0,
-            ],
-            [
-                'id_producto' => 20,
-                'nombre_pro' => 'SSD M.2 NVMe 1TB High Speed',
-                'descripcion' => 'Velocidad de lectura de hasta 7000 MB/s, disipador de calor incluido.',
-                'valor_pro' => 110.00,
-                'marca' => 101,
-                'id_imagen' => 'storage/img/RAW.png',
-                'id_categoria' => 8,
-                'id__stock' => 20,
-                'id_cupon' => 2,
-            ],
-        ];
 
         DB::table('producto')->insertOrIgnore($productos);
     }
