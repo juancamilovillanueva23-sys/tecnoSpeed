@@ -1,4 +1,4 @@
-<x-layouts::app.barra_nav :title="__('cargador')">
+<x-layouts::app.barra_nav :title="__('celulares')">
 </x-layouts::app.barra_nav>
 <body>
     <div class="flex flex-col md:flex-row gap-8 mt-4 p-4">
