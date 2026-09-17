@@ -5,8 +5,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 
 Route::get('/celulares', [ProductoController::class, 'index'])->name('celulares');
+Route::get('/audifono', [ProductoController::class, 'index'])->name('audifono');
+Route::get('/parlante', [ProductoController::class, 'index'])->name('parlante');
 Route::view('/cargadores', 'cargador')->name('cargador');
 Route::view('/audifonos', 'audifono')->name('audifono');
+Route::view('/parlantes', 'parlante')->name('parlante');
 Route::view('/', 'inicio')->name('home');
 
 

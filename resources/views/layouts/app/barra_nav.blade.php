@@ -54,7 +54,7 @@
                 <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="#">Accesorios<i class="fa-solid fa-shield"></i></a></li>
                 <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="#">Cargadores<i class="fa-solid fa-charging-station"></i></a></li>
                 <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 "><a href="{{ route('celulares') }}">Celulares<i class="fa-solid fa-mobile-screen"></i></a></li>
-                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 "><a href="#">Parlantes<i class="fa-solid fa-mobile-screen"></i></a></li>
+                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 "><a href="{{ route('parlante') }}">Parlantes<i class="fa-solid fa-mobile-screen"></i></a></li>
             </ul>
         </nav>
     </div>

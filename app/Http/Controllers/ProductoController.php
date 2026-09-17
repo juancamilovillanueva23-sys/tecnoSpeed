@@ -20,5 +20,8 @@ class ProductoController extends Controller
 
         // Retornar la vista 'celular' (o 'inicio', según el nombre exacto de tu archivo blade)
         return view('celular', compact('productos'));
+        return view('audifono', compact('productos'));
+         return view('parlante', compact('productos'));
+        
     }
 }
