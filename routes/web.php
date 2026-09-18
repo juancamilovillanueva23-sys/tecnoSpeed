@@ -5,10 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 
 Route::get('/celulares', [ProductoController::class, 'celular_productos'])->name('celulares');
-Route::get('/cargador', [ProductoController::class, 'index'])->name('cargador');
-Route::get('/accesorio', [ProductoController::class, 'index'])->name('accesorio');
-Route::get('/parlante', [ProductoController::class, 'index'])->name('parlante');
 Route::get('/audifono', [ProductoController::class, 'audifonos_productos'])->name('audifono');
+Route::get('/accesorio', [ProductoController::class, 'accesorio_productos'])->name('accesorio');
+Route::get('/parlante', [ProductoController::class, 'parlante_productos'])->name('parlante');
+Route::get('/cargador', [ProductoController::class, 'cargador_productos'])->name('cargador');
 Route::view('/cargadores', 'cargador')->name('cargador');
 Route::view('/parlantes', 'parlante')->name('parlante');
 Route::view('/accesorios', 'accesorio')->name('accesorio');
