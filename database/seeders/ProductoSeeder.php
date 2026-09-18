@@ -20,7 +20,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Auriculares inalámbricos con cancelación activa de ruido premium y audio adaptativo.',
                 'valor_pro' => 70000,
                 'marca' => 102, // Apple
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/airpods2.jpg',
                 'id_categoria' => 2, // Audífonos
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -31,7 +31,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Siguiente generación con sonido de alta fidelidad y mejoras en el estuche de carga inteligente.',
                 'valor_pro' => 80000,
                 'marca' => 102, // Apple
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/airpods_pro3.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -42,7 +42,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Diseño ergonómico avanzado, mayor duración de batería y audio espacial personalizado.',
                 'valor_pro' => 90000,
                 'marca' => 102, // Apple
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/airpods4.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -53,7 +53,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Auriculares de diadema premium con transductor dinámico diseñado por Apple y modo ambiente.',
                 'valor_pro' => 130000,
                 'marca' => 102, // Apple
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/airpods_max.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -64,7 +64,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Auriculares de cable clásicos con micrófono integrado y conector USB tipo C nativo.',
                 'valor_pro' => 65000,
                 'marca' => 102, // Apple
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/Earusb-c.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -75,7 +75,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Auriculares cableados tradicionales con mando a distancia para control de volumen.',
                 'valor_pro' => 70000,
                 'marca' => 102, // Apple
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/Earlight.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -86,7 +86,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Auriculares supraaurales con cancelación de ruido inteligente y diseño plegable.',
                 'valor_pro' => 105990,
                 'marca' => 103, // Sony
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/Earsony-noise.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -97,7 +97,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Diseño renovado de ajuste abierto con cancelación de ruido y sonido nítido de 24 bits.',
                 'valor_pro' => 60990,
                 'marca' => 101, // Samsung
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/sambud3.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -108,7 +108,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Edición esencial con graves potentes, batería de larga duración y resistencia al agua.',
                 'valor_pro' => 60000,
                 'marca' => 101, // Samsung
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/galbudscor.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -119,7 +119,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Auriculares in-ear ergonómicos resistentes al polvo y salpicaduras con sonido Deep Bass.',
                 'valor_pro' => 65000,
                 'marca' => 104, // JBL
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/jblwavebuds.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
