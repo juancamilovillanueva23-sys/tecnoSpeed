@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('codigo');
             $table->float('valor_cupon');
             $table->timestamp('fecha_inicio')->nullable();
-            $table->timestamp('fecha_fin');
+            $table->timestamp('fecha_fin')->nullable();
             $table->char('estado', 255);
             $table->char('producto_cupon', 255);
             $table->integer('id_users');

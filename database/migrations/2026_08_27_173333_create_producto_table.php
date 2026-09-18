@@ -9,8 +9,11 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+    
     public function up(): void
     {
+        Schema::disableForeignKeyConstraints();
+        
         Schema::create('producto', function (Blueprint $table) {
             $table->integer('id_producto')->primary();
             $table->integer('id__stock');
@@ -22,6 +25,7 @@ return new class extends Migration
             $table->integer('id_categoria');
             $table->integer('id_cupon');
         });
+        Schema::enableForeignKeyConstraints();
     }
 
     /**
