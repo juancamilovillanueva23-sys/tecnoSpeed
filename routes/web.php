@@ -3,7 +3,10 @@
 use App\Http\Middleware\EnsureTeamMembership;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\FormularioController;
 
+Route::get('/formulario', [FormularioController::class, 'mostrarFormulario']);
+Route::post('/formulario', [FormularioController::class, 'procesarFormulario']);
 Route::get('/celulares', [ProductoController::class, 'celular_productos'])->name('celulares');
 Route::get('/audifono', [ProductoController::class, 'audifonos_productos'])->name('audifono');
 Route::get('/accesorio', [ProductoController::class, 'accesorio_productos'])->name('accesorio');
