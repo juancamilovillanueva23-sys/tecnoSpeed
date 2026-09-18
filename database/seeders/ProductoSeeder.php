@@ -20,7 +20,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Auriculares inalámbricos con cancelación activa de ruido premium y audio adaptativo.',
                 'valor_pro' => 70000,
                 'marca' => 102, // Apple
-                'id_imagen' => 'storage/img/1.jpg',
+                'id_imagen' => 'storage/img/airpods2.jpg',
                 'id_categoria' => 2, // Audífonos
                 'id__stock' => 1,
                 'id_cupon' => 1,
