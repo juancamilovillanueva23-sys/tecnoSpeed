@@ -38,7 +38,7 @@
         </div>
     <!-- Logo -->
     <div class="w-3xs ml-[300px] flex rounded-full "><a href="{{ route('home') }}">
-        <img class= "logo"src="{{ asset('storage/img/logots.png') }}" alt="Logo" >
+        <img class= "logo"src="{{ asset('storage/img/logo.png') }}" alt="Logo" >
     </div>
     <!-- Botón de inicio de sesión -->
     <div class="w-3xs flex justify-end items-center bg-gray-300 rounded-full px-4  py-2 hover:bg-gray-200 transition-all duration-200 hover:scale-95">

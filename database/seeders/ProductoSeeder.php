@@ -13,7 +13,7 @@ class ProductoSeeder extends Seeder
     public function run(): void
     {
         $productos = [
-    [
+    [// --------------------Productos Audifonos-------------------------------------------------------------
         'id_producto' => 1001,
         'nombre_pro' => 'AirPods Pro 2',
         'descripcion' => 'Auriculares inalámbricos con cancelación activa de ruido premium y audio adaptativo.',
@@ -123,6 +123,9 @@ class ProductoSeeder extends Seeder
         'id__stock' => 1,
         'id_cupon' => 1,
     ],
+
+
+    // --------------------Productos Celulares-------------------------------------------------------------
     [
         'id_producto' => 2001,
         'nombre_pro' => 'iPhone 15 Pro Max',
@@ -232,7 +235,121 @@ class ProductoSeeder extends Seeder
         'id_categoria' => 1,
         'id__stock' => 1,
         'id_cupon' => 1,
-    ]
+    ],
+
+    // --------------------Productos Accesorios-------------------------------------------------------------
+    [
+    [
+        'id_producto' => 3001,
+        'nombre_pro' => 'Funda para PC Portátil',
+        'descripcion' => 'Funda de neopreno acolchada e impermeable para laptops de hasta 15.6 pulgadas con bolsillo frontal.',
+        'valor_pro' => 24.99,
+        'marca' => 102,
+        'id_imagen' => 'storage/img/3001.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3002,
+        'nombre_pro' => 'Funda Audífonos AirPods Pro 2',
+        'descripcion' => 'Funda de silicona de alta resistencia con mosquetón antirrobo y soporte para carga inalámbrica.',
+        'valor_pro' => 12.50,
+        'marca' => 103,
+        'id_imagen' => 'storage/img/3002.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3003,
+        'nombre_pro' => 'Funda Audífonos AirPods Pro 3',
+        'descripcion' => 'Estuche protector con acabado mate tacto suave, protección 360° contra caídas y polvo.',
+        'valor_pro' => 14.00,
+        'marca' => 103,
+        'id_imagen' => 'storage/img/3003.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3004,
+        'nombre_pro' => 'Funda Audífonos AirPods Pro 4',
+        'descripcion' => 'Funda rígida con textura de fibra de carbono, cierre magnético de seguridad y clip de transporte.',
+        'valor_pro' => 15.99,
+        'marca' => 103,
+        'id_imagen' => 'storage/img/3004.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3005,
+        'nombre_pro' => 'Cordón Colgante Anti-Pérdida',
+        'descripcion' => 'Correa ajustable universal para teléfono celular, elaborada en trenzado de nailon reforzado.',
+        'valor_pro' => 8.99,
+        'marca' => 104,
+        'id_imagen' => 'storage/img/3005.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3006,
+        'nombre_pro' => 'Soporte para Celular',
+        'descripcion' => 'Soporte de escritorio fabricado en aluminio con ángulo de inclinación y altura ajustable.',
+        'valor_pro' => 18.00,
+        'marca' => 104,
+        'id_imagen' => 'storage/img/3006.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3007,
+        'nombre_pro' => 'Batería Portátil',
+        'descripcion' => 'Power bank de 10,000 mAh con carga rápida de 22.5W, doble puerto USB-C y pantalla LED de carga.',
+        'valor_pro' => 35.50,
+        'marca' => 105,
+        'id_imagen' => 'storage/img/3007.jpg',
+        'id_categoria' => 3,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3008,
+        'nombre_pro' => 'Aro de Luz para Celular',
+        'descripcion' => 'Luz LED recargable en clip con 3 niveles de brillo para mejores fotos, videos y llamadas.',
+        'valor_pro' => 11.99,
+        'marca' => 104,
+        'id_imagen' => 'storage/img/3008.jpg',
+        'id_categoria' => 2,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3009,
+        'nombre_pro' => 'Teclado Gamer',
+        'descripcion' => 'Teclado mecánico retroiluminado RGB con switches azules, respuesta ultrarrápida y Anti-Ghosting.',
+        'valor_pro' => 59.99,
+        'marca' => 106,
+        'id_imagen' => 'storage/img/3009.jpg',
+        'id_categoria' => 4,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+    [
+        'id_producto' => 3010,
+        'nombre_pro' => 'Mouse Ergonómico',
+        'descripcion' => 'Mouse vertical inalámbrico diseñado para reducir la tensión muscular, con DPI ajustable hasta 3200.',
+        'valor_pro' => 29.99,
+        'marca' => 106,
+        'id_imagen' => 'storage/img/3010.jpg',
+        'id_categoria' => 4,
+        'id__stock' => 1,
+        'id_cupon' => 1,
+    ],
+]
 ];
 
 

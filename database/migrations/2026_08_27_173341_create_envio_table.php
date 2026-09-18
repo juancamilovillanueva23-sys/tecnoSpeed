@@ -15,8 +15,8 @@ return new class extends Migration
 
         Schema::create('envio', function (Blueprint $table) {
             $table->integer('id_envio')->primary();
-            $table->timestamp('fecha_envio');
-            $table->timestamp('fecha_llegada');
+            $table->timestamp('fecha_envio')->nullable();
+            $table->timestamp('fecha_llegada')->nullable();
             $table->float('valor_envio');
             $table->integer('id_transportadora');
             $table->integer('id_costo_envio');
