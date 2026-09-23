@@ -64,7 +64,6 @@ public function audifonos_productos(Request $request)
 
     return view('cargador', compact('productos'));
 } 
-    // ------------ consultas parlante -------------------
-}
-
+    // ------------ consultas parlante -------------------} 
+}   
 
