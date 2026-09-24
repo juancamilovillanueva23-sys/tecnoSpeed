@@ -14,7 +14,7 @@
 <main class=" mt-12 grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
         <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700 shadow-2xl shadow-2xl shadow-slate-900/50">
             <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods_pro.jpg') }}" alt="Imagen de auriculares">
+                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods_pro3.jpg') }}" alt="Imagen de auriculares">
                 <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 3</h2>
             </article>
             <article class="flex items-center justify-between mt-8">
