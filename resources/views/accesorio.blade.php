@@ -32,7 +32,7 @@
             <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700">
                 <article class="flex flex-col justify-center items-center">
                     <!-- Imagen mapeada según id_producto o id_imagen -->
-                 <img class="w-full h-[190px] object-cover rounded-3xl hover:scale-95 transition-transform"
+                 <img class="w-full h-[190px] object-contain rounded-3xl hover:scale-105 transition"
                     src="{{ asset($producto->id_imagen ?? 'storage/img/1.jpg') }}"
                     alt="{{ $producto->nombre_pro }}"
                     onerror="this.onerror=null; this.src='{{ asset('storage/img/1.jpg') }}';">

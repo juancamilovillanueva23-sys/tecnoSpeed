@@ -11,7 +11,7 @@
             <div class="status-message">{{ session('status') }}</div>
         @endif
 
-        <form method="POST" action="{{ route('login.store') }}" class="login-form">
+         <form method="POST" action="{{ route('login') }}" class="login-form">
             @csrf
 
             <div class="grupo-campo">

@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\FormularioController;
 
+
+
 Route::get('/formulario', [FormularioController::class, 'mostrarFormulario']);
 Route::post('/formulario', [FormularioController::class, 'procesarFormulario']);
 Route::get('/celulares', [ProductoController::class, 'celular_productos'])->name('celulares');
