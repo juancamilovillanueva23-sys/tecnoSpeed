@@ -6,14 +6,14 @@
      @vite('resources/css/style_inicio.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>-----</title>
+    <title>TecnoSpeed</title>
 </head>
 <header>  
 <!--container del header-->
     <div class=" bg-white p-4 flex justify-between items-center">
     <!-- Formulario de búsqueda -->
         <div class="w-xl mt-1 px-4 ">
-          <form action="#" method="GET" class="relative flex items-center">
+          <form action="{{ route('busqueda') }}" method="GET" class="relative flex items-center">
              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-400">
                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>

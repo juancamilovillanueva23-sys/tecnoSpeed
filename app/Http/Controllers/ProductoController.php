@@ -65,5 +65,26 @@ public function audifonos_productos(Request $request)
     return view('cargador', compact('productos'));
 } 
     // ------------ consultas parlante -------------------} 
+
+// boton de busqueda
+public function buscar(Request $request) 
+{
+    // Convertimos lo que escribe el usuario a minúsculas
+    $query = strtolower($request->input('query'));
+    
+    // Pasamos toda la expresión SQL en el primer parámetro y el array con el valor en el segundo
+    $productos = Producto::whereRaw('LOWER(nombre_pro) LIKE ?', ["%{$query}%"])->get();
+
+    return view('busqueda', compact('productos', 'query'));
+}
+public function ver_mas($id)
+{
+    // Carga el producto junto con sus especificaciones asociadas mediante Eager Loading
+    $producto = Producto::with('especificaciones')->where('id_producto', $id)->firstOrFail();
+
+    return view('ver_mas', compact('producto'));
+}
+
 }   
+
 
