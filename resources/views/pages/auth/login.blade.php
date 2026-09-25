@@ -11,6 +11,14 @@
             <div class="status-message">{{ session('status') }}</div>
         @endif
 
+        @if ($errors->any())
+            <div class="status-message">
+        @foreach ($errors->all() as $error)
+            <p>{{ $error }}</p>
+        @endforeach
+            </div>
+         @endif
+
          <form method="POST" action="{{ route('login') }}" class="login-form">
             @csrf
 
