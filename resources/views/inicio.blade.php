@@ -8,82 +8,116 @@
 <div class="  bg-gradient-to-r from-blue-100 to-blue-400 p-4 rounded-lg shadow-md flex justify-center items-center">
     <h1 class="text-2xl font-bold uppercase text-gray-800">¡Bienvenido a TecnoSpeed! Tu mejor opción para adquirir tecnología confiable y de la mejor calidad.</h1>
 </div>
- <div class=" mt-6 justify-items-center w-full  ">
-            <h1 class="text-2xl font-bold uppercase text-gray-800 mx-4  px-8 bg-blue-600 text-white rounded-3xl">Productos Destacados<i class="fa-solid fa-medal text-yellow-300 hover:text-yellow-200"></i></h1>
-        </div>  
-<main class=" mt-12 grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700 shadow-2xl shadow-2xl shadow-slate-900/50">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods_pro.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 3</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$104.900</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$94.900</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700 shadow-2xl shadow-slate-900/50">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods2.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Pro 2</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$89.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$79.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
 
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700 shadow-2xl shadow-slate-900/500">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/airpods_max.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[180px] text-center h-10">Airpods Max</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$140.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$119.000</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-        
-        <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700 shadow-2xl shadow-slate-900/50">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/iphone17promax.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[220px] text-center h-10">Iphone 17 pro max</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$7.899.999</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$4.799.999</h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
-         <section class="w-full bg-white p-3 rounded-[32px] h-[350px] border-[6px] border-blue-700 shadow-2xl shadow-slate-900/50">
-            <article class="flex flex-col justify-center items-center">
-                <img class=" w-full h-[190px] rounded-3xl hover:scale-95 transition-transform" src="{{ asset('storage/img/iphone15.jpg') }}" alt="Imagen de auriculares">
-                <h2 class="text-lg font-bold uppercase text-gray-800 bg-slate-400 px-2 py-2 mt-2 rounded-lg w-[220px] text-center h-10">Iphone 15 pro max</h2>
-            </article>
-            <article class="flex items-center justify-between mt-8">
-                <div class="flex flex-col">
-                    <h4 class="text-gray-800 text-xs font-medium line-through">$5.999.000</h4>
-                    <h3 class="text-gray-800 text-2xl font-black">$2.999.000 </h3>
-                </div>
-                <a class="bg-blue-700 w-[120px] px-6 py-3 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">Ver más </a>
-            </article>
-        </section>
+ <div class="w-full bg-[url('/storage/img/fon_Eslo.jpg')] bg-cover bg-center bg-no-repeat min-h-[400px] mt-2 flex justify-end items-center p-8  rounded-3xl">
+  <div class="max-w-md text-right pr-4 sm:pr-8">
+    <h1 class="text-xl sm:text-2xl font-bold text-gray-800 leading-tight">
+      No es solo un accesorio en la esencia de tu estilo
+    </h1>
+    <button class="mt-4 inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2.5 rounded-lg shadow-md transition-colors duration-200">
+      Conócenos
+    </button>
+  </div>
+</div>   
+<main class="grid grid-cols-2 gap-6 p-4">
+
+  <section class="bg-blue-500 w-full h-[500px] rounded-3xl flex flex-col items-center justify-center text-center p-6 transition-colors duration-300 hover:bg-blue-400">
+    <h1 class="text-4xl sm:text-5xl font-black text-white tracking-widest uppercase drop-shadow-md mb-2">
+      IN EAR
+    </h1>
+    
+    <div class="w-[30px] border-[3px] border-white p-1 rounded-sm mb-4">
+        <i class="fa-solid fa-ear-deaf text-white"></i>
+    </div>
+    <p class="text-violet-100 text-xl  max-w-xs mb-4">
+      Audífonos intrauditivos diseñados para un ajuste ergonómico y un aislamiento acústico superior.
+    </p>
+    <ul class="text-violet-200 text-xs sm:text-sm space-y-2 text-left list-disc list-inside">
+      <li>Cancelación pasiva de ruido exterior.</li>
+      <li>Diseño ultra compacto y liviano.</li>
+      <li>Gomas de silicona adaptables (S, M, L).</li>
+      <li>Bajos profundos y sonido de alta resolución.</li>
+    </ul>
+</section>
+   <section class="bg-blue-500 w-full h-[500px] rounded-3xl flex flex-col items-center justify-center text-center p-6 transition-colors duration-300 hover:bg-blue-400">
+    <h1 class="text-4xl sm:text-5xl font-black text-white tracking-widest uppercase drop-shadow-md mb-2">
+      ON EAR
+    </h1>
+    
+    <div class="w-[40px] border-[3px] border-white p-1 rounded-sm mb-4">
+        <i class="fa-solid fa-headphones text-white"></i>
+    </div>
+    <p class="text-violet-100 text-lg max-w-xs mb-4">
+      Audífonos supraaurales que descansan sobre la oreja, ofreciendo el equilibrio perfecto entre portabilidad y fidelidad sonora.
+    </p>
+    <ul class="text-violet-200 text-xs sm:text-sm space-y-2 text-left list-disc list-inside">
+      <li>Diseño supraaural ligero y compacto.</li>
+      <li>Almohadillas acolchadas de alta comodidad.</li>
+      <li>Drivers de mayor tamaño para graves potentes.</li>
+      <li>Estructura plegable ideal para transportar.</li>
+    </ul>
+</section>
+<section class="col-span-2 mt-8 px-4">
+    
+
+    <span class="inline-block border border-blue-300 bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider mb-4">
+      PREGUNTAS FRECUENTES
+    </span>
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">
+      Todo lo que necesitas <span class="text-blue-600">saber</span>
+    </h2>
+    <div class="space-y-4">
+      
+      <details class="group bg-blue-100 border border-blue-200 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden" open>
+        <summary class="flex items-center justify-between cursor-pointer font-bold text-gray-900 text-lg">
+          ¿Cuánto tarda en enviarse mi pedido?
+          <span class="bg-blue-600 text-white rounded-full p-1.5 transition-transform group-open:rotate-180">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+          </span>
+        </summary>
+        <p class="mt-4 text-gray-600 text-sm sm:text-base leading-relaxed">
+          Si tu pago se confirma <strong class="text-gray-900">antes de las 12:00 del mediodía</strong>, tu producto se ensambla, prueba y despacha <strong class="text-gray-900">el mismo día</strong>. Si el pago llega después de las 12:00, se envía al <strong class="text-gray-900">día hábil siguiente</strong>. Una vez despachado, los tiempos de entrega son de 1 a 3 días hábiles según tu ciudad. Enviamos a toda Colombia con guía de seguimiento.
+        </p>
+      </details>
+      <details class="group bg-blue-100 border border-blue-200 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer font-bold text-gray-900 text-lg">
+          ¿Puedo financiar mis audífonos? ¿Qué opciones hay?
+          <span class="bg-blue-500 text-white rounded-full p-1.5 transition-transform group-open:rotate-180">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </span>
+        </summary>
+        <p class="mt-4 text-gray-600 text-sm sm:text-base leading-relaxed">
+          Ofrecemos opciones de pago a cuotas con Addi, Bancolombia y tarjetas de crédito habilitadas.
+        </p>
+      </details>
+      <details class="group bg-blue-100 border border-blue-200 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer font-bold text-gray-900 text-lg">
+          ¿In-Ear o On-Ear para mi día a día?
+          <span class="bg-blue-500 text-white rounded-full p-1.5 transition-transform group-open:rotate-180">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </span>
+        </summary>
+        <p class="mt-4 text-gray-600 text-sm sm:text-base leading-relaxed">
+          Los In-Ear son ideales para movilidad y hacer deporte por su aislamiento pasivo. Los On-Ear entregan mayor comodidad en sesiones largas de trabajo o estudio.
+        </p>
+      </details>
+        <details class="group bg-blue-100 border border-blue-200 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer font-bold text-gray-900 text-lg">
+          ¿Tienen garantia?
+          <span class="bg-blue-500 text-white rounded-full p-1.5 transition-transform group-open:rotate-180">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </span>
+        </summary>
+        <p class="mt-4 text-gray-600 text-sm sm:text-base leading-relaxed">
+          Cada producto de la tienda cuenta con 4 meses de garantia al momento de su compra 
+        </p>
+      </details>
+
+    </div>
+  </section>
+
 </main>
-    <div class="bg-[url('/storage/img/fon_Eslo.jpg')] bg-contain bg-center bg-no-repeat w-full h-auto aspect-[16/9] rounded-5xs mt-4">
-    <h1>No es solo un accesorio en la escensia de tu estilo</h1>
-</div>
     
 
   
