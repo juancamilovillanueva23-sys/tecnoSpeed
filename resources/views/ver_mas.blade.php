@@ -17,9 +17,9 @@
                 
                 <!-- Columna Izquierda: Imagen principal del producto -->
                 <div class="flex justify-center items-center bg-black p-6 rounded-2xl border-2 border-blue-500 min-h-[350px]">
-                    <img src="{{ asset('storage/' . $producto->id_imagen) }}" 
-                         alt="{{ $producto->nombre_pro }}" 
-                         class="max-h-96 object-contain">
+                 <img src="{{ asset($producto->id_imagen ?? 'storage/img/1.jpg') }}" 
+                    alt="{{ $producto->nombre_pro }}"
+                    class="max-h-96 object-contain rounded-2xl">
                 </div>
 
                 <!-- Columna Derecha: Detalles de Compra y Nombre -->
@@ -73,28 +73,19 @@
                     Especificaciones técnicas
                 </h2>
 
-                @if(isset($especificaciones) && $especificaciones->count() > 0)
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        @foreach($especificaciones as $esp)
-                            <div class="flex border-b border-slate-200 py-3 px-2 hover:bg-slate-50 transition">
-                                <span class="w-1/2 text-slate-600 font-bold text-sm">{{ $esp->clave }}</span>
-                                <span class="w-1/2 text-slate-900 font-semibold text-sm">{{ $esp->valor }}</span>
-                            </div>
-                        @endforeach
-                    </div>
-                @elseif(isset($producto->especificaciones) && $producto->especificaciones->count() > 0)
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        @foreach($producto->especificaciones as $esp)
-                            <div class="flex border-b border-slate-200 py-3 px-2 hover:bg-slate-50 transition">
-                                <span class="w-1/2 text-slate-600 font-bold text-sm">{{ $esp->clave }}</span>
-                                <span class="w-1/2 text-slate-900 font-semibold text-sm">{{ $esp->valor }}</span>
-                            </div>
-                        @endforeach
-                    </div>
-                @else
-                    <p class="text-slate-500 italic py-4">No hay especificaciones técnicas detalladas para este producto.</p>
-                @endif
-            </div>
+    @if($producto->especificaciones_tecnicas && $producto->especificaciones_tecnicas->count() > 0)
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            @foreach($producto->especificaciones_tecnicas as $esp)
+                <div class="flex border-b border-slate-200 py-3 px-2 hover:bg-slate-50 transition">
+                    <span class="w-1/2 text-slate-600 font-bold text-sm">{{ $esp->clave }}</span>
+                    <span class="w-1/2 text-slate-900 font-semibold text-sm">{{ $esp->valor }}</span>
+                </div>
+            @endforeach
+        </div>
+    @else
+        <p class="text-slate-500 italic py-4">No hay especificaciones técnicas detalladas para este producto.</p>
+    @endif
+        </div>
 
         </div>
     </div>

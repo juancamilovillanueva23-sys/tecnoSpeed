@@ -79,8 +79,8 @@ public function buscar(Request $request)
 }
 public function ver_mas($id)
 {
-    // Carga el producto junto con sus especificaciones asociadas mediante Eager Loading
-    $producto = Producto::with('especificaciones')->where('id_producto', $id)->firstOrFail();
+    // Carga el producto usando el nombre del método en el modelo Producto
+    $producto = Producto::with('especificaciones_tecnicas')->where('id_producto', $id)->firstOrFail();
 
     return view('ver_mas', compact('producto'));
 }

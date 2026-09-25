@@ -302,6 +302,6 @@ class especificaciones_tecnicasSeeder extends Seeder
             ['id_producto' => 5010, 'clave' => 'Diseño', 'valor' => 'Clavijas plegables ultra compacto'],
         ];
 
-        DB::table('especificaciones')->insertOrIgnore($especificaciones);
+        DB::table('especificaciones_tecnicas')->insertOrIgnore($especificaciones);
     }
 }

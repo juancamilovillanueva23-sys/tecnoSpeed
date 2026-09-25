@@ -50,9 +50,10 @@
                         </h3>
                    
                     </div>
-                        <button type="submit" class="bg-blue-700 w-[100px] py-2 mt-4 rounded-2xl text-white hover:bg-blue-500 text-center font-bold">
-                        Ver más
-                        </button>
+                        <a href="{{ route('ver_mas', $producto->id_producto) }}" 
+                            class="bg-blue-700 w-[100px] py-2 mt-4 rounded-2xl text-white hover:bg-blue-500 text-center font-bold inline-block">Ver más
+                        </a>
+                        
                 </article>
             </section>
 

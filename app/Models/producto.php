@@ -28,8 +28,8 @@ class Producto extends Model
     /**
      * Relación con las especificaciones técnicas
      */
-    public function especificaciones()
+    public function especificaciones_tecnicas()
     {
         return $this->hasMany(especificaciones_tecnicas::class, 'id_producto', 'id_producto');
     }
-}
+}   

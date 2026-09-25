@@ -10,7 +10,7 @@ return new class extends Migration
      * Run the migrations.
      */
    public function up(): void {
-        Schema::create('especificacion_tecnica', function (Blueprint $table) {
+        Schema::create('especificaciones_tecnicas', function (Blueprint $table) {
             $table->id('id_especificacion');
             $table->integer('id_producto'); // Llave foránea hacia producto
             $table->string('clave');        // Ejemplo: "Almacenamiento", "RAM", "Cámara Principal"
