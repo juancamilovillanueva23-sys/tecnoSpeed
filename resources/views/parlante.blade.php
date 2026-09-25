@@ -49,22 +49,12 @@
                         <h3 class="text-gray-800 text-xl font-black">
                             ${{ number_format($producto->valor_pro, 0, ',', '.') }}
                         </h3>
-<<<<<<< HEAD
-                   
-                    </div>
-                        <a href="{{ route('ver_mas', $producto->id_producto) }}" 
-                            class="bg-blue-700 w-[100px] py-2 mt-4 rounded-2xl text-white hover:bg-blue-500 text-center font-bold inline-block">Ver más
-                        </a>
-                </article>
-            </section>
-=======
                         <a href="{{ route('ver_mas', $producto->id_producto) }}" 
                             class="bg-blue-700 px-4 py-2 rounded-2xl text-white hover:bg-blue-500 text-center font-bold text-sm whitespace-nowrap transition-colors">
                             Ver más
                         </a>
                     </article>
                 </section>
->>>>>>> 2ee5958a0eb72802304e0fefae365bb0ffd1533e
 
             @empty
                 <div class="col-span-full text-center py-12 bg-white rounded-3xl border-2 border-gray-200">

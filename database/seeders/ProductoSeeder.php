@@ -277,7 +277,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Funda rígida con textura de fibra de carbono, cierre magnético de seguridad y clip de transporte.',
                 'valor_pro' => 15990,
                 'marca' => 103,
-                'id_imagen' => 'storage/img/fun_airdpodspro.jpg',
+                'id_imagen' => 'storage/img/fun_airpodspro4.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
