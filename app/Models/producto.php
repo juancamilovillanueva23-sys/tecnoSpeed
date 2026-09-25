@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model; // Importación del modelo independiente
 
 class Producto extends Model
 {
@@ -11,7 +11,7 @@ class Producto extends Model
 
     protected $table = 'producto';
     protected $primaryKey = 'id_producto';
-    public $timestamps = false; // Desactiva created_at y updated_at si la migración no los tiene
+    public $timestamps = false;
 
     protected $fillable = [
         'id_producto',
@@ -26,10 +26,10 @@ class Producto extends Model
     ];
 
     /**
-     * Scope para filtrar por categoría si id_categoria representa Celulares (ej. ID 1)
+     * Relación con las especificaciones técnicas
      */
-    public function scopeCelulares($query, $idCategoria = 1)
+    public function especificaciones_tecnicas()
     {
-        return $query->where('id_categoria', $idCategoria);
+        return $this->hasMany(especificaciones_tecnicas::class, 'id_producto', 'id_producto');
     }
-}
+}   

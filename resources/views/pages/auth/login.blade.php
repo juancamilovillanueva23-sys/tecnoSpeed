@@ -11,7 +11,15 @@
             <div class="status-message">{{ session('status') }}</div>
         @endif
 
-        <form method="POST" action="{{ route('login.store') }}" class="login-form">
+        @if ($errors->any())
+            <div class="status-message">
+        @foreach ($errors->all() as $error)
+            <p>{{ $error }}</p>
+        @endforeach
+            </div>
+         @endif
+
+         <form method="POST" action="{{ route('login') }}" class="login-form">
             @csrf
 
             <div class="grupo-campo">
