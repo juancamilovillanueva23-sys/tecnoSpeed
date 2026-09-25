@@ -1,5 +1,11 @@
 @vite(['resources/css/login.css'])
-
+<header >
+        <div class="volver">
+                <a href="{{ route('home') }}"class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold mb-2">
+                    &larr; Volver 
+                </a>
+            </div>
+</header>
 <div class="login-page">
     <div class="login-card">
         <div class="login-header">
@@ -53,19 +59,22 @@
                     </a>
                 </div>
             @endif
-
-            <button type="submit" class="btn-iniciar">
-                Iniciar sesión
-            </button>
+            <div class="btni ">
+                <a href="{{ route('login') }}" >
+                        Iniciar sesión
+                    </a>
+            </div>
+            
+           
         </form>
 
-        <div class="login-footer">
+        <!-- <div class="login-footer">
             <a 
                 href="{{ $teamInvitation ? route('register', ['invitation' => $teamInvitation['code']]) : route('register') }}" 
-                wire:navigate 
+                wire:navigate   
                 class="enlace-footer"
             >  
             </a>
-        </div>
+        </div> -->
     </div>
 </div>

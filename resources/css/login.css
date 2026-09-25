@@ -1,3 +1,24 @@
+/* header */
+header{
+    background-color: #ffffff;
+    height: 130px;
+}
+.volver {
+    background-color: #2563eb;
+    text-align: center;
+   
+    
+    color: #e5e7eb;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.volver a{
+     color: #e5e7eb;
+      padding: 10px;
+
+}
+
 /* Fondo general grisáceo */
 .login-page {
     min-height: 100vh;
@@ -89,22 +110,28 @@
 }
 
 /* Botón principal */
-.btn-iniciar {
+.btni{
     background-color: #2563eb;
-    color: #ffffff;
     border: none;
     border-radius: 25px;
     padding: 12px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
     width: 100%;
-    transition: background-color 0.2s;
+    text-align: center;
+    
 }
 
-.btn-iniciar:hover {
-    background-color: #1d4ed8;
+.btni a{
+    color: #ffffff;
 }
+
+
+.btni:hover {
+    background-color: #3581f5;
+}
+
+
+    
+
 
 /* Enlaces inferiores */
 .login-footer {
