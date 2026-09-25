@@ -42,7 +42,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Diseño ergonómico avanzado, mayor duración de batería y audio espacial personalizado.',
                 'valor_pro' => 90000,
                 'marca' => 102, // Apple
-                'id_imagen' => 'storage/img/airpods4.jpg',
+                'id_imagen' => 'storage/img/audifonospro4.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -277,7 +277,7 @@ class ProductoSeeder extends Seeder
                 'descripcion' => 'Funda rígida con textura de fibra de carbono, cierre magnético de seguridad y clip de transporte.',
                 'valor_pro' => 15990,
                 'marca' => 103,
-                'id_imagen' => 'storage/img/Funda_airdpodspro4.jpg',
+                'id_imagen' => 'storage/img/fun_airdpodspro.jpg',
                 'id_categoria' => 2,
                 'id__stock' => 1,
                 'id_cupon' => 1,
@@ -317,7 +317,7 @@ class ProductoSeeder extends Seeder
             ],
             [
                 'id_producto' => 3008,
-                'nombre_pro' => 'Aro de Luz para Celular',
+                'nombre_pro' => 'Aro de Luz para Celula4r',
                 'descripcion' => 'Luz LED recargable en clip con 3 niveles de brillo para mejores fotos, videos y llamadas.',
                 'valor_pro' => 11990,
                 'marca' => 104,
