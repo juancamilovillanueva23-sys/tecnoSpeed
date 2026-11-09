@@ -50,11 +50,11 @@
     <div class=" h-px40  p-2 bg-black flex-row">
         <nav>
             <ul class="flex flex-row  justify-around ">
-                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 h-[28px]"><a href="{{ route('audifono') }}">Auriculares<i class="fa-solid fa-headphones"></i></a></li>
-                <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="{{ route('accesorio') }}">Accesorios<i class="fa-solid fa-shield"></i></a></li>
-                <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full px-4"><a href="{{ route('cargador') }}">Cargadores<i class="fa-solid fa-charging-station"></i></a></li>
-                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 "><a href="{{ route('celulares') }}">Celulares<i class="fa-solid fa-mobile-screen"></i></a></li>
-                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full px-4 "><a href="{{ route('parlante') }}">Parlantes<i class="fa-solid fa-mobile-screen"></i></a></li>
+                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full  p-6  h-[28px]"><a href="{{ route('audifono') }}">Auriculares<i class="fa-solid fa-headphones"></i></a></li>
+                <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full p-6  h-[28px]"><a href="{{ route('accesorio') }}">Accesorios<i class="fa-solid fa-shield"></i></a></li>
+                <li class="text-black bg-blue-300 hover:bg-blue-200  rounded-full p-4  h-[28px]"><a href="{{ route('cargador') }}">Cargadores<i class="fa-solid fa-charging-station"></i></a></li>
+                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full p-4  h-[28px] "><a href="{{ route('celulares') }}">Celulares<i class="fa-solid fa-mobile-screen"></i></a></li>
+                <li class="text-black bg-blue-300 hover:bg-blue-200 rounded-full p-4  h-[28px]"><a href="{{ route('parlante') }}">Parlantes<i class="fa-solid fa-mobile-screen"></i></a></li>
             </ul>
         </nav>
     </div>
