@@ -3,88 +3,115 @@
 namespace App\Http\Controllers;
 
 use App\Models\Producto;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 class ProductoController extends Controller
 {
-    // ------------ consultas audifonos -------------------
-public function audifonos_productos(Request $request)
-{
-    $query = Producto::query()->where('id_producto', 'like', '10%');
-    $productos = $query->paginate(10);
+    public function audifonos_productos(Request $request)
+    {
+        $productos = $this->productosFiltrados($request, '10')->paginate(10)->withQueryString();
 
-    return view('audifono', compact('productos'));
-} 
-    // ------------ consultas audifonos -------------------
-    
-    // ------------ consultas celulares -------------------
+        return view('audifono', compact('productos'));
+    }
+
     public function celular_productos(Request $request)
-  {
-    
-    $query = Producto::query()->where('id_producto', 'like', '20%');
+    {
+        $productos = $this->productosFiltrados($request, '20')->paginate(10)->withQueryString();
 
-    $productos = $query->paginate(10);
+        return view('celular', compact('productos'));
+    }
 
-    return view('audifono', compact('productos'));
-} 
-  // ------------ consultas celulares -------------------
+    public function accesorio_productos(Request $request)
+    {
+        $productos = $this->productosFiltrados($request, '30')->paginate(10)->withQueryString();
 
+        return view('accesorio', compact('productos'));
+    }
 
-    // ------------ consultas accesorios -------------------
-      public function accesorio_productos(Request $request)
-  {
-    
-    $query = Producto::query()->where('id_producto', 'like', '30%');
+    public function parlante_productos(Request $request)
+    {
+        $productos = $this->productosFiltrados($request, '40')->paginate(10)->withQueryString();
 
-    $productos = $query->paginate(10);
+        return view('parlante', compact('productos'));
+    }
 
-    return view('accesorio', compact('productos'));
-} 
-    // ------------ consultas accesorios -------------------
+    public function cargador_productos(Request $request)
+    {
+        $productos = $this->productosFiltrados($request, '50')->paginate(10)->withQueryString();
 
-    // ------------ consultas parlante -------------------
-      public function parlante_productos(Request $request)
-  {
-    
-    $query = Producto::query()->where('id_producto', 'like', '40%');
+        return view('cargador', compact('productos'));
+    }
 
-    $productos = $query->paginate(10);
+    public function index(Request $request)
+    {
+        $productos = $this->productosFiltrados($request)->paginate(10)->withQueryString();
 
-    return view('parlante', compact('productos'));
-} 
-    // ------------ consultas parlante -------------------
+        return view('productos', compact('productos'));
+    }
 
-     // ------------ consultas parlante -------------------
-      public function cargador_productos(Request $request)
-  {
-    
-    $query = Producto::query()->where('id_producto', 'like', '50%');
+    private function productosFiltrados(Request $request, ?string $prefijo = null): Builder
+    {
+        $filtros = $request->validate([
+            'buscar' => ['nullable', 'string', 'max:255'],
+            'marca' => ['nullable', 'string', 'max:100'],
+            'precio_max' => ['nullable', 'numeric', 'min:0'],
+            'orden' => ['nullable', 'in:precio_asc,precio_desc,recientes'],
+        ]);
 
-    $productos = $query->paginate(10);
+        $query = Producto::query();
 
-    return view('cargador', compact('productos'));
-} 
-    // ------------ consultas parlante -------------------} 
+        if ($prefijo !== null) {
+            $query->where('id_producto', 'like', $prefijo.'%');
+        }
 
-// boton de busqueda
-public function buscar(Request $request) 
-{
-    // Convertimos lo que escribe el usuario a minúsculas
-    $query = strtolower($request->input('query'));
-    
-    // Pasamos toda la expresión SQL en el primer parámetro y el array con el valor en el segundo
-    $productos = Producto::whereRaw('LOWER(nombre_pro) LIKE ?', ["%{$query}%"])->get();
+        if (! empty($filtros['buscar'])) {
+            $termino = mb_strtolower($filtros['buscar']);
+            $query->whereRaw('LOWER(nombre_pro) LIKE ?', ['%'.$termino.'%']);
+        }
 
-    return view('busqueda', compact('productos', 'query'));
+        if (! empty($filtros['marca'])) {
+            $marca = trim($filtros['marca']);
+
+            $query->where(function (Builder $query) use ($marca) {
+                if (is_numeric($marca)) {
+                    $query->where('marca', $marca);
+                } else {
+                    $termino = mb_strtolower($marca);
+                    $query->whereRaw('LOWER(nombre_pro) LIKE ?', ['%'.$termino.'%'])
+                        ->orWhereRaw('LOWER(descripcion) LIKE ?', ['%'.$termino.'%']);
+                }
+            });
+        }
+
+        if (isset($filtros['precio_max']) && $filtros['precio_max'] !== '') {
+            $query->where('valor_pro', '<=', $filtros['precio_max']);
+        }
+
+        match ($filtros['orden'] ?? null) {
+            'precio_asc' => $query->orderBy('valor_pro'),
+            'precio_desc' => $query->orderByDesc('valor_pro'),
+            'recientes' => $query->orderByDesc('id_producto'),
+            default => null,
+        };
+
+        return $query;
+    }
+
+    public function buscar(Request $request)
+    {
+        $query = mb_strtolower($request->input('query', ''));
+        $productos = Producto::whereRaw('LOWER(nombre_pro) LIKE ?', ['%'.$query.'%'])->get();
+
+        return view('busqueda', compact('productos', 'query'));
+    }
+
+    public function ver_mas($id)
+    {
+        $producto = Producto::with('especificaciones_tecnicas')
+            ->where('id_producto', $id)
+            ->firstOrFail();
+
+        return view('ver_mas', compact('producto'));
+    }
 }
-public function ver_mas($id)
-{
-    // Carga el producto usando el nombre del método en el modelo Producto
-    $producto = Producto::with('especificaciones_tecnicas')->where('id_producto', $id)->firstOrFail();
-
-    return view('ver_mas', compact('producto'));
-}
-
-}   
-
-

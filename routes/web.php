@@ -20,6 +20,8 @@ Route::get('/audifono', [ProductoController::class, 'audifonos_productos'])->nam
 Route::get('/accesorio', [ProductoController::class, 'accesorio_productos'])->name('accesorio');
 Route::get('/parlante', [ProductoController::class, 'parlante_productos'])->name('parlante');
 Route::get('/cargador', [ProductoController::class, 'cargador_productos'])->name('cargador');
+//ruta para los filtros
+Route::get('/productos', [ProductoController::class, 'index'])->name('productos.index');
 // Ruta para mostrar el detalle de un producto específico
 Route::get('/producto/{id}', [ProductoController::class, 'ver_mas'])->name('ver_mas');
 // Ruta de Búsqueda
