@@ -99,11 +99,11 @@
         </div>
         <div class="flex items-center space-x-4 p-2 border-t sm:border-t-0 sm:border-l border-gray-100">
             <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl shrink-0">
-                <i class="fa-solid fa-credit-card"></i>
+                <i class="fa-brands fa-whatsapp"></i>
             </div>
             <div>
-                <h4 class="text-sm font-bold text-gray-900">Pago a Cuotas</h4>
-                <p class="text-xs text-gray-500">Financiamiento con Addi y tarjetas</p>
+                <h4 class="text-sm font-bold text-gray-900">Pagos WhatsApp</h4>
+                <p class="text-xs text-gray-500">Ten tu mejor experiencia con asesores 24/7</p>
             </div>
         </div>
     </div>
