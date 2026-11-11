@@ -14,7 +14,7 @@
             <main class="flex-1 w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
 
                 @forelse ($productos as $producto)
-                    <section class="w-full bg-white p-4 rounded-[32px] border-[6px] border-blue-700 flex flex-col justify-between">
+                    <section class="w-full bg-white p-4 rounded-[32px] border-[2px] border-blue-700 flex flex-col justify-between">
                         <div>
                             <!-- Imagen del producto -->
                             <div class="w-full h-[180px] bg-black rounded-2xl p-2 flex items-center justify-center overflow-hidden">

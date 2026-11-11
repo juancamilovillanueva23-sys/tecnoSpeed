@@ -1,5 +1,5 @@
 <aside class="w-full max-w-xs transition-all duration-300 ease-in-out hover:-translate-y-1">
-    <form action="{{ url()->current() }}" method="GET" class="bg-white p-5 rounded-[32px] border-[3px] border-blue-600 shadow-md hover:shadow-2xl transition-all duration-300">
+    <form action="{{ url()->current() }}" method="GET" class="bg-white p-5 rounded-[32px] border-[2px] border-blue-600 shadow-md hover:shadow-2xl transition-all duration-300">
         
         <!-- Badge de Título con animación pulse en el fondo -->
         <div class="flex justify-center mb-5">

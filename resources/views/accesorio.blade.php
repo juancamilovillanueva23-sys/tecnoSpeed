@@ -15,7 +15,7 @@
                 
                 @forelse ($productos as $producto)
 
-                    <section class="w-full bg-white p-4 rounded-[32px] border-[6px] border-blue-700 flex flex-col justify-between">
+                    <section class="w-full bg-white p-4 rounded-[32px] border-[2px] border-blue-700 flex flex-col justify-between">
                         <div>
                             <!-- Contenedor con espacio interno (p-2), fondo negro y bordes redondeados -->
                             <div class="w-full h-[180px] bg-black rounded-2xl p-2 flex items-center justify-center overflow-hidden">
@@ -24,6 +24,7 @@
                                     alt="{{ $producto->nombre_pro }}"
                                     onerror="this.onerror=null; this.src='{{ asset('storage/img/1.jpg') }}';">
                             </div>
+                            <img data-img="{{ asset('storage/img/1.jpg') }}" ...>
 
                             <!-- Título dinámico que no se corta ni rompe la tarjeta -->
                             <div class="bg-slate-400 rounded-lg p-2 mt-3 flex items-center justify-center min-h-[48px]">

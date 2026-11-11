@@ -14,8 +14,34 @@
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-4">
             
-            <!-- 1. Formulario de búsqueda - AHORA A LA IZQUIERDA -->
-            <div class="w-full md:w-96 order-2 md:order-1">
+            <!-- 1. Botones de Acción (Inicio, Carrito, Iniciar Sesión) - AHORA A LA IZQUIERDA -->
+            <div class="flex items-center gap-4 order-3 md:order-1">
+                <!-- Botón de Casa / Inicio -->
+                <a href="{{ route('home') }}" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-blue-700 hover:bg-blue-600 hover:text-white transition-all duration-200 shadow-sm" title="Inicio">
+                    <i class="fa-solid fa-house text-lg"></i>
+                </a>
+
+                <!-- Botón de Carrito -->
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-blue-700 hover:bg-blue-600 hover:text-white transition-all duration-200 shadow-sm relative" title="Carrito">
+                    <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </a>
+
+                <!-- Botón de Inicio de Sesión -->
+                <a href="{{ route('login') }}" class="flex items-center gap-2 bg-blue-50 text-blue-800 border border-blue-200 rounded-full px-5 py-2 hover:bg-blue-700 hover:text-white hover:border-transparent transition-all duration-200 font-medium text-sm shadow-sm">
+                    <span>Iniciar Sesión</span>
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+
+            <!-- 2. Logo Redondeado (Centro) -->
+            <div class="flex items-center justify-center order-1 md:order-2">
+                <a href="{{ route('home') }}" class="transition-transform hover:scale-105">
+                    <img class="w-14 h-14 rounded-full object-cover border-2 border-blue-600 shadow-sm" src="{{ asset('storage/img/logo.png') }}" alt="Logo TecnoSpeed">
+                </a>
+            </div>
+
+            <!-- 3. Formulario de búsqueda - AHORA A LA DERECHA -->
+            <div class="w-full md:w-96 order-2 md:order-3">
                 <form action="{{ route('busqueda') }}" method="GET" class="relative flex items-center">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-400">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -36,32 +62,6 @@
                         Buscar
                     </button>
                 </form>
-            </div>
-
-            <!-- 2. Logo Redondeado (Centro) -->
-            <div class="flex items-center justify-center order-1 md:order-2">
-                <a href="{{ route('home') }}" class="transition-transform hover:scale-105">
-                    <img class="w-14 h-14 rounded-full object-cover border-2 border-blue-600 shadow-sm" src="{{ asset('storage/img/logo.png') }}" alt="Logo TecnoSpeed">
-                </a>
-            </div>
-
-            <!-- 3. Botones de Acción (Inicio de sesión, carrito, inicio) - AHORA A LA DERECHA -->
-            <div class="flex items-center gap-4 order-3 md:order-3">
-                <!-- Botón de Casa / Inicio -->
-                <a href="{{ route('home') }}" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-blue-700 hover:bg-blue-600 hover:text-white transition-all duration-200 shadow-sm" title="Inicio">
-                    <i class="fa-solid fa-house text-lg"></i>
-                </a>
-
-                <!-- Botón de Carrito -->
-                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-blue-700 hover:bg-blue-600 hover:text-white transition-all duration-200 shadow-sm relative" title="Carrito">
-                    <i class="fa-solid fa-cart-shopping text-lg"></i>
-                </a>
-
-                <!-- Botón de Inicio de Sesión -->
-                <a href="{{ route('login') }}" class="flex items-center gap-2 bg-blue-50 text-blue-800 border border-blue-200 rounded-full px-5 py-2 hover:bg-blue-700 hover:text-white hover:border-transparent transition-all duration-200 font-medium text-sm shadow-sm">
-                    <span>Iniciar Sesión</span>
-                    <i class="fa-solid fa-user"></i>
-                </a>
             </div>
 
         </div>

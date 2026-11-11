@@ -15,7 +15,7 @@
 
                 @forelse ($productos as $producto)
 
-                    <section class="w-full bg-white p-4 rounded-[32px] border-[6px] border-blue-700 flex flex-col justify-between">
+                    <section class="w-full bg-white p-4 rounded-[32px] border-[2px] border-blue-700 flex flex-col justify-between">
                         <div>
                             <!-- Contenedor de imagen -->
                             <div class="w-full h-[180px] bg-black rounded-2xl p-2 flex items-center justify-center overflow-hidden">
